@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/testimonials"
 import { Faq } from "@/components/faq"
 import { CtaSection } from "@/components/cta-section"
 import { SiteFooter } from "@/components/site-footer"
+import { ScrollReveal } from "@/components/scroll-reveal"
 
 export default function Page() {
   return (
@@ -15,13 +16,27 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
-        <StatsBar />
-        <Networks />
-        <Features />
-        <HowItWorks />
-        <Testimonials />
-        <Faq />
-        <CtaSection />
+        <ScrollReveal>
+          <StatsBar />
+        </ScrollReveal>
+        <ScrollReveal delay="sm">
+          <Networks />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Features />
+        </ScrollReveal>
+        <ScrollReveal delay="sm">
+          <HowItWorks />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
+        <ScrollReveal delay="sm">
+          <Faq />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CtaSection />
+        </ScrollReveal>
       </main>
       <SiteFooter />
     </div>
