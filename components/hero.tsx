@@ -14,12 +14,20 @@ export function Hero() {
           muted
           playsInline
           preload="metadata"
-          poster="/images/usdt-wallet-hero.png"
           disablePictureInPicture
+          aria-hidden="true"
           tabIndex={-1}
           className="pointer-events-none absolute inset-0 size-full scale-110 transform-gpu bg-black object-cover object-center will-change-transform"
         >
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
+          <source
+            src="/videos/hero-background-av1.webm"
+            type={`video/webm; codecs="av01.0.05M.08"`}
+          />
+          <source
+            src="/videos/hero-background-vp9.webm"
+            type={`video/webm; codecs="vp9"`}
+          />
+          <source src="/videos/hero-background-fallback.mp4" type="video/mp4" />
         </video>
       </div>
 
