@@ -7,13 +7,17 @@ export function Hero() {
       id="home"
       className="relative isolate min-h-[100svh] overflow-hidden"
     >
-      <div aria-hidden="true" className="absolute inset-0 bg-black">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[url('/images/usdt-wallet-hero.jpg')] bg-cover bg-center bg-black"
+      >
         <video
           autoPlay
           loop
           muted
           playsInline
           preload="metadata"
+          poster="/images/usdt-wallet-hero.jpg"
           disablePictureInPicture
           aria-hidden="true"
           tabIndex={-1}
